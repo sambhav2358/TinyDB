@@ -9,7 +9,8 @@ public class TinyDB {
 
     public static TinyDBManager getInstance(Context context){
         SharedPreferences prefs = context.getSharedPreferences("TinyDBData",Context.MODE_PRIVATE );
-        if (tinyDBManager == null) tinyDBManager = new TinyDBManager(context,prefs);
+        if (tinyDBManager == null)
+            tinyDBManager = new TinyDBManager(context,prefs);
         return tinyDBManager;
     }
 }
