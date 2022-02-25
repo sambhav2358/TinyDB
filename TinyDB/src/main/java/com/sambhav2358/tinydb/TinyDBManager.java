@@ -27,6 +27,8 @@ public class TinyDBManager {
 
     public <E> void putList(String key, List<E> value){ Paper.book().write(key,value); }
 
+    public <E> void put(String key, E value){ Paper.book().write(key,value); }
+
     public String getString(String key, String defValue){return sharedPreferences.getString(key,defValue);}
 
     public int getInt(String key, int defValue){return sharedPreferences.getInt(key,defValue);}
@@ -36,6 +38,8 @@ public class TinyDBManager {
     public boolean getBoolean(String key, boolean defValue){return sharedPreferences.getBoolean(key,defValue);}
 
     public <E> List<E> getList(String key, List<E> defValue){return Paper.book().read(key);}
+
+    public <E> List<E> get(String key, E defValue){return Paper.book().read(key);}
 
     public void clearAll(){
         sharedPreferences.edit().clear().apply();

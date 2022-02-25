@@ -2,6 +2,7 @@ package com.sambhav2358.tinydb;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     TextView textView;
     TinyDBManager manger;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
