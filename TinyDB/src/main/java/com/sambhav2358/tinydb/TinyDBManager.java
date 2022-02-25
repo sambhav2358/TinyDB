@@ -3,7 +3,6 @@ package com.sambhav2358.tinydb;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import java.nio.file.Path;
 import java.util.List;
 
 import io.paperdb.Paper;

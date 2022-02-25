@@ -28,4 +28,5 @@ android {
 
 dependencies {
     implementation 'io.github.pilgr:paperdb:2.7.2'
+    androidTestImplementation 'junit:junit:4.12'
 }
