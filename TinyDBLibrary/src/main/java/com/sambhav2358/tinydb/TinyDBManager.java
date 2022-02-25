@@ -9,7 +9,7 @@ import io.paperdb.Paper;
 
 public class TinyDBManager {
 
-    private SharedPreferences sharedPreferences;
+    private final SharedPreferences sharedPreferences;
 
     public TinyDBManager(Context context, SharedPreferences prefs) {
         this.sharedPreferences = prefs;

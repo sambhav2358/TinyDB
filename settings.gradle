@@ -16,4 +16,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "TinyDB"
 include ':app'
-include ':TinyDB'
+include ':TinyDBLibrary'
