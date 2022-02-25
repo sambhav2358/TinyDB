@@ -18,7 +18,7 @@ You can also view the sample `settings.gradle` file from [here](https://github.c
 2. Add this line to your app level `build.gradle` add this line:
 
 ```
-implementation 'com.github.sambhav2358:TinyDB:1.0' // the version may change the it may not reflect here so please refer to the tag given above.
+implementation 'com.github.sambhav2358:TinyDB:1.0' // the version may change but it may not reflect here so please refer to the tag given above.
 ```
 
 
