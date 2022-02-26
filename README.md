@@ -2,17 +2,16 @@
 A simple and easy to use database library to save user data. It is very lighweight and uses on 8kb or less on the app! Also it needs minimum api level of 25 only. According to Android Studio, it will work 0n 92% devices. Isn't it amazing?
 
   
-  
-  <p align="center">
-  
+    
   [![API](https://img.shields.io/badge/API-25%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=25)
   [![API](https://img.shields.io/github/v/release/sambhav2358/TinyDB.svg?label=Latest%20Version)](https://img.shields.io/github/v/release/sambhav2358/TinyDB.svg?label=Latest%20Version)
   ![GitHub repo size](https://img.shields.io/github/repo-size/sambhav2358/TinyDB?label=Repository%20size)
   <a href="https://jitpack.io/#sambhav2358/TinyDB"><img src="https://jitpack.io/v/sambhav2358/TinyDB/month.svg"/></a>
-  </p>
-  ![GitHub issues](https://img.shields.io/github/issues-raw/sambhav2358/TinyDB?color=blue)
-
-
+  <img src="https://img.shields.io/github/commits-since/sambhav2358/TinyDB/1.6"/>
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues/sambhav2358/TinyDB?color=blue">
+  <a href="https://github.com/sambhav2358/TinyDB/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/sambhav2358/TinyDB"></a>
+  <img src="https://img.shields.io/github/stars/sambhav2358/TinyDB"/>
+  <img src="https://img.shields.io/badge/State-working-blue"/>
 ## Implementation
 It is a very simple library and easy to use too. But, not only that, it is also very easy to implement.
 
