@@ -5,9 +5,9 @@ A simple and easy to use database library to save user data. It is very lighweig
   
   <p align="center">
   
-  <a href="https://jitpack.io/#sambhav2358/TinyDB"><img src="https://jitpack.io/v/sambhav2358/TinyDB/month.svg"/></a>
   [![API](https://img.shields.io/badge/API-25%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=25)
   [![](https://jitpack.io/v/sambhav2358/TinyDB.svg)](https://jitpack.io/#sambhav2358/TinyDB)
+  <a href="https://jitpack.io/#sambhav2358/TinyDB"><img src="https://jitpack.io/v/sambhav2358/TinyDB/month.svg"/></a>
   </p>
 
 
@@ -39,7 +39,7 @@ manger.putInt("abc",new Random().nextInt(10000));
 
 ```
 //With Shred Preferences
-SharedPreferences prefs = context.getSharedPreferences("TinyDBData",Context.MODE_PRIVATE );
+SharedPreferences prefs = context.getSharedPreferences("MyAppData",Context.MODE_PRIVATE );
 SharedPreferences.Editor editor = prefs.edit();
 editor.putString( key, value );
 editor.apply();
