@@ -74,4 +74,6 @@ You can save these kind of formats to save
 For everyone who wants me to add a feature, just create an issue with the feature you want.
 
 
-### Thanks
+## Author
+
+Build with ❤️ by [Sambhav Khandelwal](https://github.com/sambhav2358)
