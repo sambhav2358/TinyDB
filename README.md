@@ -1,7 +1,6 @@
 
 # TinyDB
 A simple and easy to use database library to save user data. It is very lighweight and uses on 8kb or less on the app! Also it needs minimum api level of 25 only. According to Android Studio, it will work 0n 92% devices. Isn't it amazing?
-
   
     
   [![API](https://img.shields.io/badge/API-25%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=25)
@@ -16,6 +15,8 @@ A simple and easy to use database library to save user data. It is very lighweig
   <img src="https://img.shields.io/badge/License-MIT-blue"/>
   <img src="https://img.shields.io/badge/Code%20quality-A-blue"/>
   <img src="https://img.shields.io/badge/Built%20using-Android%20Studio-blue"/>
+  
+  
 ## Implementation
 It is a very simple library and easy to use too. But, not only that, it is also very easy to implement.
 
