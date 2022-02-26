@@ -50,7 +50,7 @@ editor.putString( key, value );
 editor.apply();
 ```
 
-Now do you get it? Dont even worry about the app size. No more than 18kb. I have measured it.
+Now do you get it? Dont even worry about the app size. No more than 8kb. I have measured it.
 
 ## Usage
 As mentioned above, it is very easy to use.
