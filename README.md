@@ -82,6 +82,18 @@ manger = TinyDB.getInstance(this);
 textView.setText(manger.getInt("abc",1) + "");
 ```
 
+## Deleting a key of data
+Easy peasy just call this:
+```
+tinyDB.clearKey(String yourKey);
+```
+
+## Deleting all the values
+Just do this
+```
+tinyDB.clearAll();
+```
+
 ## Possible types
 
 You can save these kind of formats to save
