@@ -69,3 +69,9 @@ You can save these kind of formats to save
 
 ## Thanks to
 [Paper](https://github.com/pilgr/Paper)
+
+## Feature request
+For everyone who wants me to add a feature, just create an issue with the feature you want.
+
+
+### Thanks
