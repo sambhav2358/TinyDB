@@ -12,6 +12,7 @@ A simple and easy to use database library to save user data. It is very lighweig
   <a href="https://github.com/sambhav2358/TinyDB/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/sambhav2358/TinyDB"></a>
   <img src="https://img.shields.io/github/stars/sambhav2358/TinyDB"/>
   <img src="https://img.shields.io/badge/State-working-blue"/>
+  <img src="https://img.shields.io/badge/License-MIT-blue"/>
 ## Implementation
 It is a very simple library and easy to use too. But, not only that, it is also very easy to implement.
 
