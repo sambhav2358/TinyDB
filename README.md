@@ -11,7 +11,7 @@ A simple and easy to use database library to save user data. It is very lighweig
   </p>
 
 
-## Implmentation
+## Implementation
 It is a very simple library and easy to use too. But, not only that, it is also very easy to implement.
 
 1. Add this line to your `settings.gradle` file:
