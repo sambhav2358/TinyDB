@@ -18,7 +18,7 @@ You can also view the sample `settings.gradle` file from [here](https://github.c
 2. Add this line to your app level `build.gradle` add this line:
 
 ```
-implementation 'com.github.sambhav2358:TinyDB:1.0' // the version may change but it may not reflect here so please refer to the tag given above.
+implementation 'com.github.sambhav2358:TinyDB:3.0'
 ```
 
 
@@ -69,3 +69,11 @@ You can save these kind of formats to save
 
 ## Thanks to
 [Paper](https://github.com/pilgr/Paper)
+
+## Feature request
+For everyone who wants me to add a feature, just create an issue with the feature you want.
+
+
+## Author
+
+Build with ❤️ by [Sambhav Khandelwal](https://github.com/sambhav2358)
