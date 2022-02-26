@@ -1,3 +1,4 @@
+
 # TinyDB
 A simple and easy to use database library to save user data. It is very lighweight and uses on 8kb or less on the app! Also it needs minimum api level of 25 only. According to Android Studio, it will work 0n 92% devices. Isn't it amazing?
 
@@ -13,6 +14,8 @@ A simple and easy to use database library to save user data. It is very lighweig
   <img src="https://img.shields.io/github/stars/sambhav2358/TinyDB"/>
   <img src="https://img.shields.io/badge/State-working-blue"/>
   <img src="https://img.shields.io/badge/License-MIT-blue"/>
+  <img src="https://img.shields.io/badge/Code%20quality-A-blue"/>
+  <img src="https://img.shields.io/badge/Built%20using-Android%20Studio-blue"/>
 ## Implementation
 It is a very simple library and easy to use too. But, not only that, it is also very easy to implement.
 
@@ -113,6 +116,7 @@ You can save these kind of formats to save
 For everyone who wants me to add a feature, just create an issue with the feature you want.
 
 ## License
+```
 MIT License
 
 Copyright (c) 2022 Sambhav Khandelwal
@@ -134,7 +138,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
+```
 ## Author
 
 Build with ❤️ by [Sambhav Khandelwal](https://github.com/sambhav2358)
