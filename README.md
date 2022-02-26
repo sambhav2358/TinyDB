@@ -28,7 +28,7 @@ You can also view the sample `settings.gradle` file from [here](https://github.c
 implementation 'com.github.sambhav2358:TinyDB:3.0'
 ```
 
-## Why do I use this instaed of Shared Preferences?
+## Why do I use this instead of Shared Preferences?
 
 I guess I need not answer it. But I will. Just compare the lines of code for you to write
 ``` 
