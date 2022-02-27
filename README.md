@@ -30,7 +30,7 @@ You can also view the sample `settings.gradle` file from [here](https://github.c
 2. Add this line to your app level `build.gradle` add this line:
 
 ```
-implementation 'com.github.sambhav2358:TinyDB:3.0'
+implementation 'com.github.sambhav2358:TinyDB:1.6'
 ```
 
 ## Why do I use this instead of Shared Preferences?
