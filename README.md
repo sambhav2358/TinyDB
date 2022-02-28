@@ -34,7 +34,7 @@ implementation 'com.github.sambhav2358:TinyDB:1.6'
 
 ## Why do I use this instead of Shared Preferences?
 
-I guess I need not answer it. But I will. Just compare the lines of code for you to write
+I guess I need not answer it. But I will. Just compare the lines of code for you to write. But any which way, the llibraray does the very same thing in the background
 ``` 
 //With the library
 TinyDBManger manger = TinyDB.getInstance(this);
