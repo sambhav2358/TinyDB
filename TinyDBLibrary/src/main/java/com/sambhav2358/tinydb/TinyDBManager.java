@@ -10,6 +10,7 @@ import io.paperdb.Paper;
 public class TinyDBManager {
 
     private final SharedPreferences sharedPreferences;
+    ValueChangeListener valueChangeListener;
 
     public TinyDBManager(Context context, SharedPreferences prefs) {
         this.sharedPreferences = prefs;
@@ -18,31 +19,37 @@ public class TinyDBManager {
 
     public void putString(String key, String value){
         if (isNull(key)) throw new NullPointerException();
+        if (!isNull(valueChangeListener)) valueChangeListener.onValueAdded(key,value);
         sharedPreferences.edit().putString(key,value).apply();
     }
 
     public void putInt(String key, int value){
         if (isNull(key)) throw new NullPointerException();
+        if (!isNull(valueChangeListener)) valueChangeListener.onValueAdded(key,value);
         sharedPreferences.edit().putInt(key,value).apply();
     }
 
     public void putFloat(String key, float value){
         if (isNull(key)) throw new NullPointerException();
+        if (!isNull(valueChangeListener)) valueChangeListener.onValueAdded(key,value);
         sharedPreferences.edit().putFloat(key,value).apply();
     }
 
     public void putBoolean(String key, boolean value){
         if (isNull(key)) throw new NullPointerException();
+        if (!isNull(valueChangeListener)) valueChangeListener.onValueAdded(key,value);
         sharedPreferences.edit().putBoolean(key,value).apply();
     }
 
     public <E> void putList(String key, List<E> value){
         if (isNull(key)) throw new NullPointerException();
+        if (!isNull(valueChangeListener)) valueChangeListener.onValueAdded(key,value);
         Paper.book().write(key,value);
     }
 
     public <E> void put(String key, E value){
         if (isNull(key)) throw new NullPointerException();
+        if (!isNull(valueChangeListener)) valueChangeListener.onValueAdded(key,value);
         Paper.book().write(key,value);
     }
 
@@ -78,14 +85,26 @@ public class TinyDBManager {
 
     public void clearAll(){
         sharedPreferences.edit().clear().apply();
+        if (!isNull(valueChangeListener)) valueChangeListener.onAllKeysRemoved();
         Paper.book().destroy();
     }
 
     public void clearKey(String key){
         if (isNull(key)) throw new NullPointerException();
+        if (!isNull(valueChangeListener)) valueChangeListener.onKeyRemoved(key);
         sharedPreferences.edit().remove(key).apply();
         Paper.book().delete(key);
     }
 
     private <E> boolean isNull(E value){ return value == null; }
+
+    public void setValueChangeListener(ValueChangeListener valueChangeListener) {
+        this.valueChangeListener = valueChangeListener;
+    }
+
+    interface ValueChangeListener{
+        <E> void onValueAdded(String key, E value);
+        void onKeyRemoved(String key);
+        void onAllKeysRemoved();
+    }
 }
