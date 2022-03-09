@@ -102,7 +102,7 @@ public class TinyDBManager {
         this.valueChangeListener = valueChangeListener;
     }
 
-    interface ValueChangeListener{
+    public interface ValueChangeListener{
         <E> void onValueAdded(String key, E value);
         void onKeyRemoved(String key);
         void onAllKeysRemoved();
