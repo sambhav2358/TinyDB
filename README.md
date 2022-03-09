@@ -1,16 +1,20 @@
+
 # TinyDB
-A simple and easy to use database library to save user data. It is very lighweight and uses on 18kb or less on the app! Also it needs minimum api level of 25 only. According to Android Studio, it will work 0n 92% devices. Isn't it amazing?
-
-  
-  
-  <p align="center">
-  
+A simple and easy to use database library to save user data. It is very lighweight and uses on 8kb or less on the app! Also it needs minimum api level of 25 only. According to Android Studio, it will work 0n 92% devices. Isn't it amazing?
+      
   [![API](https://img.shields.io/badge/API-25%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=25)
-  [![](https://jitpack.io/v/sambhav2358/TinyDB.svg)](https://jitpack.io/#sambhav2358/TinyDB)
+  [![API](https://img.shields.io/github/v/release/sambhav2358/TinyDB.svg?label=Latest%20Version)](https://img.shields.io/github/v/release/sambhav2358/TinyDB.svg?label=Latest%20Version)
+  ![GitHub repo size](https://img.shields.io/github/repo-size/sambhav2358/TinyDB?label=Repository%20size)
   <a href="https://jitpack.io/#sambhav2358/TinyDB"><img src="https://jitpack.io/v/sambhav2358/TinyDB/month.svg"/></a>
-  </p>
-
-
+  <img src="https://img.shields.io/github/commits-since/sambhav2358/TinyDB/1.6"/>
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues/sambhav2358/TinyDB?color=blue">
+  <a href="https://github.com/sambhav2358/TinyDB/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/sambhav2358/TinyDB?label=Forks"></a>
+  <a href="https://github.com/sambhav2358/TinyDB/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/sambhav2358/TinyDB?label=Stars"></a>
+  <img src="https://img.shields.io/badge/State-working-blue"/>
+  <img src="https://img.shields.io/badge/Code%20quality-A-blue"/>
+  <img src="https://img.shields.io/badge/Built%20using-Android%20Studio-blue"/>
+  <img src="https://img.shields.io/badge/Top%20language-Java-blue"/>  
+  
 ## Implementation
 It is a very simple library and easy to use too. But, not only that, it is also very easy to implement.
 
@@ -25,12 +29,12 @@ You can also view the sample `settings.gradle` file from [here](https://github.c
 2. Add this line to your app level `build.gradle` add this line:
 
 ```
-implementation 'com.github.sambhav2358:TinyDB:3.0'
+implementation 'com.github.sambhav2358:TinyDB:1.6'
 ```
 
 ## Why do I use this instead of Shared Preferences?
 
-I guess I need not answer it. But I will. Just compare the lines of code for you to write
+I guess I need not answer it. But I will. Just compare the lines of code for you to write. But any which way, the llibraray does the very same thing in the background
 ``` 
 //With the library
 TinyDBManger manger = TinyDB.getInstance(this);
@@ -45,7 +49,7 @@ editor.putString( key, value );
 editor.apply();
 ```
 
-Now do you get it? Dont even worry about the app size. No more than 18kb. I have measured it.
+Now do you get it? Dont even worry about the app size. No more than 8kb. I have measured it.
 
 ## Usage
 As mentioned above, it is very easy to use.
@@ -110,7 +114,8 @@ You can save these kind of formats to save
 ## Feature request
 For everyone who wants me to add a feature, just create an issue with the feature you want.
 
-
+## License
+Free to use and modify the code.
 ## Author
 
 Build with ❤️ by [Sambhav Khandelwal](https://github.com/sambhav2358)
