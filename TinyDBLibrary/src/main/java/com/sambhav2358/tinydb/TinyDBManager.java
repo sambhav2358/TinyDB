@@ -73,12 +73,12 @@ public class TinyDBManager {
         return sharedPreferences.getBoolean(key,defValue);
     }
 
-    public <E> List<E> getList(String key, List<E> defValue){
+    public <E> E getList(String key, List<E> defValue){
         if (isNull(key)) throw new NullPointerException();
         return Paper.book().read(key);
     }
 
-    public <E> List<E> get(String key, E defValue){
+    public <E> E get(String key, E defValue){
         if (isNull(key)) throw new NullPointerException();
         return Paper.book().read(key);
     }
