@@ -15,6 +15,40 @@ A simple and easy to use database library to save user data. It is very lighweig
   <img src="https://img.shields.io/badge/Built%20using-Android%20Studio-blue"/>
   <img src="https://img.shields.io/badge/Top%20language-Java-blue"/>  
   
+## Recent updates
+You now have listener for data change, removal and etc...
+
+See this:
+```
+public class MyClass extends Activity implements TinyDBManager.ValueChangeListener{
+
+   TinyBDManager tinyDB;
+    
+   @Override
+   public void onCreate(Bundle mBundle){
+      ...
+      tinyDB = TinyDB.getInstance(this);
+      tinyBD.setValueChangeListener(this);
+   }
+
+   @Override
+   public void onValueAdded(String key, E value){
+      // a value is added or modified
+   }
+   
+   @Override
+   public void onKeyRemoved(String key){
+      // a value is removed
+   }
+   
+   @Override
+   public void onAllKeysRemoved(String key){
+      // all the values are removed
+   }
+
+}
+```
+  
 ## Implementation
 It is a very simple library and easy to use too. But, not only that, it is also very easy to implement.
 
