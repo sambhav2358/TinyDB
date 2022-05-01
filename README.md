@@ -2,11 +2,11 @@
 # TinyDB
 A simple and easy to use database library to save user data. It is very lighweight and uses on 8kb or less on the app! Also it needs minimum api level of 25 only. According to Android Studio, it will work 0n 92% devices. Isn't it amazing?
       
-  [![API](https://img.shields.io/badge/API-25%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=25)
+  [![API](https://img.shields.io/badge/API-19%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=19)
   [![API](https://img.shields.io/github/v/release/sambhav2358/TinyDB.svg?label=Latest%20Version)](https://img.shields.io/github/v/release/sambhav2358/TinyDB.svg?label=Latest%20Version)
   ![GitHub repo size](https://img.shields.io/github/repo-size/sambhav2358/TinyDB?label=Repository%20size)
   <a href="https://jitpack.io/#sambhav2358/TinyDB"><img src="https://jitpack.io/v/sambhav2358/TinyDB/month.svg"/></a>
-  <img src="https://img.shields.io/github/commits-since/sambhav2358/TinyDB/1.91"/>
+  <img src="https://img.shields.io/github/commits-since/sambhav2358/TinyDB/1.92"/>
   <img alt="GitHub issues" src="https://img.shields.io/github/issues/sambhav2358/TinyDB?color=blue">
   <a href="https://github.com/sambhav2358/TinyDB/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/sambhav2358/TinyDB?label=Forks"></a>
   <a href="https://github.com/sambhav2358/TinyDB/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/sambhav2358/TinyDB?label=Stars"></a>
@@ -153,3 +153,6 @@ Free to use and modify the code.
 ## Author
 
 Build with ❤️ by [Sambhav Khandelwal](https://github.com/sambhav2358)
+
+
+[Stack overflow](https://stackoverflow.com/users/17133283/sambhav-k)
