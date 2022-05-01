@@ -6,7 +6,7 @@ A simple and easy to use database library to save user data. It is very lighweig
   [![API](https://img.shields.io/github/v/release/sambhav2358/TinyDB.svg?label=Latest%20Version)](https://img.shields.io/github/v/release/sambhav2358/TinyDB.svg?label=Latest%20Version)
   ![GitHub repo size](https://img.shields.io/github/repo-size/sambhav2358/TinyDB?label=Repository%20size)
   <a href="https://jitpack.io/#sambhav2358/TinyDB"><img src="https://jitpack.io/v/sambhav2358/TinyDB/month.svg"/></a>
-  <img src="https://img.shields.io/github/commits-since/sambhav2358/TinyDB/1.8"/>
+  <img src="https://img.shields.io/github/commits-since/sambhav2358/TinyDB/1.91"/>
   <img alt="GitHub issues" src="https://img.shields.io/github/issues/sambhav2358/TinyDB?color=blue">
   <a href="https://github.com/sambhav2358/TinyDB/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/sambhav2358/TinyDB?label=Forks"></a>
   <a href="https://github.com/sambhav2358/TinyDB/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/sambhav2358/TinyDB?label=Stars"></a>
@@ -14,6 +14,40 @@ A simple and easy to use database library to save user data. It is very lighweig
   <img src="https://img.shields.io/badge/Code%20quality-A-blue"/>
   <img src="https://img.shields.io/badge/Built%20using-Android%20Studio-blue"/>
   <img src="https://img.shields.io/badge/Top%20language-Java-blue"/>  
+  
+## Recent updates
+You now have listener for data change, removal and etc...
+
+See this:
+```
+public class MyClass extends Activity implements TinyDBManager.ValueChangeListener{
+
+   TinyBDManager tinyDB;
+    
+   @Override
+   public void onCreate(Bundle mBundle){
+      ...
+      tinyDB = TinyDB.getInstance(this);
+      tinyBD.setValueChangeListener(this);
+   }
+
+   @Override
+   public void onValueAdded(String key, E value){
+      // a value is added or modified
+   }
+   
+   @Override
+   public void onKeyRemoved(String key){
+      // a value is removed
+   }
+   
+   @Override
+   public void onAllKeysRemoved(String key){
+      // all the values are removed
+   }
+
+}
+```
   
 ## Implementation
 It is a very simple library and easy to use too. But, not only that, it is also very easy to implement.
@@ -29,7 +63,7 @@ You can also view the sample `settings.gradle` file from [here](https://github.c
 2. Add this line to your app level `build.gradle` add this line:
 
 ```
-implementation 'com.github.sambhav2358:TinyDB:1.8'
+implementation 'com.github.sambhav2358:TinyDB:1.91'
 ```
 
 ## Why do I use this instead of Shared Preferences?
