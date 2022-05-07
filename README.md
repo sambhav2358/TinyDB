@@ -16,38 +16,85 @@ A simple and easy to use database library to save user data. It is very lighweig
   <img src="https://img.shields.io/badge/Top%20language-Java-blue"/>  
   
 ## Recent updates
-You now have listener for data change, removal and etc...
 
-See this:
-```
-public class MyClass extends Activity implements TinyDBManager.ValueChangeListener{
+A VERY MAJOR UPDATE
 
-   TinyBDManager tinyDB;
-    
-   @Override
-   public void onCreate(Bundle mBundle){
-      ...
-      tinyDB = TinyDB.getInstance(this);
-      tinyBD.setValueChangeListener(this);
-   }
+You can now create multiple databases. To use the default Datatabse, just call this:
+```java
+public class MainActivity extends AppCompatActivity implements ValueChangeListener{
 
-   @Override
-   public void onValueAdded(String key, E value){
-      // a value is added or modified
-   }
-   
-   @Override
-   public void onKeyRemoved(String key){
-      // a value is removed
-   }
-   
-   @Override
-   public void onAllKeysRemoved(String key){
-      // all the values are removed
-   }
+    TextView textView;
+    TextView textView2;
+    TinyDefaultDB defaultDB;
 
+    @SuppressLint("SetTextI18n")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        textView = findViewById(R.id.sampleTV);
+        textView2 = findViewById(R.id.sampleTV2);
+
+        defaultDB = TinyDB.getInstance().getDefaultDatabase(this);
+
+        defaultDB.setValueChangeListener(this); // this will trigger when a value will be modified ot deleted
+        defaultDB.putInt("abc",new Random().nextInt(10000));
+        textView.setText(defaultDB.getInt("abc",1)+ "");
+    }
+
+    @Override
+    public <E> void onValueAdded(String key, E value, String dbName) {
+    }
+
+    @Override
+    public void onKeyRemoved(String key, String dbName) {
+    }
+
+    @Override
+    public void onAllKeysRemoved(String dbName) {
+    }
 }
 ```
+
+This will store the values in the default database, but, you want to store the different values in the same key right, so, for that, create another custom database like this:
+```java
+public class MainActivity extends AppCompatActivity implements ValueChangeListener{
+
+    TextView textView;
+    TextView textView2;
+    TinyCustomDB customDB;
+
+    @SuppressLint("SetTextI18n")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        textView = findViewById(R.id.sampleTV);
+        textView2 = findViewById(R.id.sampleTV2);
+
+        customDB = TinyDB.getInstance().getCustomDatabase(this, "MyCustomDBName");
+
+        customDB.setValueChangeListener(this); // this will trigger when a value will be modified ot deleted
+        customDB.putInt("abc",new Random().nextInt(67));
+        textView2.setText(customDB.getInt("abc",1)+ "");
+    }
+
+    @Override
+    public <E> void onValueAdded(String key, E value, String dbName) {
+    }
+
+    @Override
+    public void onKeyRemoved(String key, String dbName) {
+    }
+
+    @Override
+    public void onAllKeysRemoved(String dbName) {
+    }
+}
+```
+
+You can also view the sample app on how it works
+
   
 ## Implementation
 It is a very simple library and easy to use too. But, not only that, it is also very easy to implement.
@@ -130,6 +177,41 @@ tinyDB.clearKey(String yourKey);
 Just do this
 ```
 tinyDB.clearAll();
+```
+
+## Knwoing when a value was added, deleted, or all values are deleted
+You have listener for data change, removal and etc...
+
+See this:
+```
+public class MainActivity extends AppCompatActivity implements ValueChangeListener{
+
+    TextView textView;
+    TinyDefaultDB defaultDB;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        defaultDB = TinyDB.getInstance().getDefaultDatabase(this);
+        defaultDB.setValueChangeListener(this); // this will trigger when a value will be modified ot deleted
+    }
+
+    @Override
+    public <E> void onValueAdded(String key, E value, String dbName) {
+
+    }
+
+    @Override
+    public void onKeyRemoved(String key, String dbName) {
+
+    }
+
+    @Override
+    public void onAllKeysRemoved(String dbName) {
+
+    }
+}
 ```
 
 ## Possible types
