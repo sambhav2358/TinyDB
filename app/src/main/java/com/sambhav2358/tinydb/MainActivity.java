@@ -8,10 +8,10 @@ import android.widget.TextView;
 
 import java.util.Random;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements ValueChangeListener{
 
     TextView textView;
-    TinyDBManager manger;
+    TinyDefaultDB customDB;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -19,8 +19,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textView = findViewById(R.id.sampleTV);
-        manger = TinyDB.getInstance(this);
-        manger.putInt("abc",new Random().nextInt(10000));
-        textView.setText(manger.getInt("abc",1) + "");
+        customDB = TinyDB.getInstance().getDefaultDatabase(this);
+        customDB.putInt("abc",new Random().nextInt(10000));
+        textView.setText(customDB.getInt("abc",1)+ "");
+    }
+
+    @Override
+    public <E> void onValueAdded(String key, E value, String dbName) {
+
+    }
+
+    @Override
+    public void onKeyRemoved(String key, String dbName) {
+
+    }
+
+    @Override
+    public void onAllKeysRemoved(String dbName) {
+
     }
 }

@@ -5,12 +5,11 @@ import android.content.SharedPreferences;
 
 public class TinyDB {
 
-    private static TinyDBManager tinyDBManager;
+    private static TinyDBDatabaseHelper tinyDBDatabaseHelper;
 
-    public static TinyDBManager getInstance(Context context){
-        SharedPreferences prefs = context.getSharedPreferences("TinyDBData",Context.MODE_PRIVATE );
-        if (tinyDBManager == null)
-            tinyDBManager = new TinyDBManager(context,prefs);
-        return tinyDBManager;
+    public static TinyDBDatabaseHelper getInstance(){
+        if (tinyDBDatabaseHelper == null)
+            tinyDBDatabaseHelper = new TinyDBDatabaseHelper();
+        return tinyDBDatabaseHelper;
     }
 }
