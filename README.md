@@ -110,7 +110,7 @@ You can also view the sample `settings.gradle` file from [here](https://github.c
 2. Add this line to your app level `build.gradle` add this line:
 
 ```
-implementation 'com.github.sambhav2358:TinyDB:1.91'
+implementation 'com.github.sambhav2358:TinyDB:2.0.1'
 ```
 
 ## Why do I use this instead of Shared Preferences?
@@ -118,8 +118,8 @@ implementation 'com.github.sambhav2358:TinyDB:1.91'
 I guess I need not answer it. But I will. Just compare the lines of code for you to write. But any which way, the llibraray does the very same thing in the background
 ``` 
 //With the library
-TinyDBManger manger = TinyDB.getInstance(this);
-manger.putInt("abc",new Random().nextInt(10000));
+TinyDefaultDB db = TinyDB.getInstance().getDefaultDatabase(this);
+db.putInt("abc",new Random().nextInt(10000));
 ```
 
 ```
@@ -130,20 +130,18 @@ editor.putString( key, value );
 editor.apply();
 ```
 
-Now do you get it? Dont even worry about the app size. No more than 8kb. I have measured it.
-
 ## Usage
 As mentioned above, it is very easy to use.
 
 In your class you can create the object like this
 ```
-TinyDBManager tinyDB;
+TinyDefaultDB tinyDB;
 ```
 Then you can initialize it anywhere and then use it.
 ```
 Context context = this;// provide the context here.
 
-tinyDB = TinyDB.getInstance(context);
+tinyDB = TinyDB.getInstance().getDefaultDatabase(this);
 ```
 ## Saving Data
 
@@ -151,8 +149,8 @@ You can just call one method provide the key and then the value. The rest happen
 
 This could be an example usage of saving data:
 ```
-manger = TinyDB.getInstance(this);
-manger.putInt("abc",new Random().nextInt(10000));
+tinyDB = TinyDB.getInstance().getDefaultDatabase(this);
+tinyDB.putInt("abc",new Random().nextInt(10000));
 ```
 
 You can also view the activity file [here](https://github.com/sambhav2358/TinyDB/blob/main/app/src/main/java/com/sambhav2358/tinydb/MainActivity.java).
@@ -163,8 +161,8 @@ It is very easy too! Just do this:
 
 ```
 textView = findViewById(R.id.sampleTV);
-manger = TinyDB.getInstance(this);
-textView.setText(manger.getInt("abc",1) + "");
+tinyDB = TinyDB.getInstance().getDefaultDatabase(this);
+textView.setText(tinyDB.getInt("abc",1) + "");
 ```
 
 ## Deleting a key of data
