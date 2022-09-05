@@ -17,8 +17,6 @@ A simple and easy to use database library to save user data. It is very lighweig
   
 ## Recent updates
 
-A VERY MAJOR UPDATE
-
 You can now create multiple databases. To use the default Datatabse, just call this:
 ```java
 public class MainActivity extends AppCompatActivity implements ValueChangeListener{
