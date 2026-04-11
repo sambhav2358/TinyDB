@@ -9,7 +9,7 @@ A simple and easy to use database library to save user data. It is very lighweig
   <img src="https://img.shields.io/github/commits-since/sambhav2358/TinyDB/1.92"/>
   <img alt="GitHub issues" src="https://img.shields.io/github/issues/sambhav2358/TinyDB?color=blue">
   <a href="https://github.com/sambhav2358/TinyDB/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/sambhav2358/TinyDB?label=Forks"></a>
-  ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.countapi.xyz%2Fhit%2Fsambhav2358-tinydb%2Fvisits&query=%24.value)
+  ![Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsambhav2358%2FTinyDB&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=views&edge_flat=false)
   <a href="https://github.com/sambhav2358/TinyDB/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/sambhav2358/TinyDB?label=Stars"></a>
   <img src="https://img.shields.io/badge/State-working-blue"/>
   <img src="https://img.shields.io/badge/Code%20quality-A-blue"/>
