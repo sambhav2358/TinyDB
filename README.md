@@ -1,8 +1,8 @@
 
 # TinyDB
-A simple and easy to use database library to save user data. It is very lighweight and uses on 8kb or less on the app! Also it needs minimum api level of 19 only. According to Android Studio, it will work on 99.7% devices. Isn't it amazing?
+A simple and easy to use database library to save user data. It is very lighweight and uses on 8kb or less on the app! Also it needs minimum api level of 25 only which means it will work on 99.7% devices. Isn't it amazing?
       
-  [![API](https://img.shields.io/badge/API-19%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=19)
+  [![API](https://img.shields.io/badge/API-19%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=25)
   [![API](https://img.shields.io/github/v/release/sambhav2358/TinyDB.svg?label=Latest%20Version)](https://img.shields.io/github/v/release/sambhav2358/TinyDB.svg?label=Latest%20Version)
   <img src="https://img.shields.io/badge/Repo%20Size-5kb-blue"/>
   <a href="https://jitpack.io/#sambhav2358/TinyDB"><img src="https://jitpack.io/v/sambhav2358/TinyDB/month.svg"/></a>
@@ -113,7 +113,7 @@ implementation 'com.github.sambhav2358:TinyDB:2.0.1'
 
 ## Why do I use this instead of Shared Preferences?
 
-I guess I need not answer it. But I will. Just compare the lines of code for you to write. But any which way, the llibraray does the very same thing in the background
+TinyDB eases the process of storing data locally on the device in any format. This is otherwise a very hard work with Shared Prefrences.
 ``` 
 //With the library
 TinyDefaultDB db = TinyDB.getInstance().getDefaultDatabase(this);
@@ -129,7 +129,6 @@ editor.apply();
 ```
 
 ## Usage
-As mentioned above, it is very easy to use.
 
 In your class you can create the object like this
 ```
@@ -155,8 +154,6 @@ You can also view the activity file [here](https://github.com/sambhav2358/TinyDB
 
 ## Retriving data
 
-It is very easy too! Just do this:
-
 ```
 textView = findViewById(R.id.sampleTV);
 tinyDB = TinyDB.getInstance().getDefaultDatabase(this);
@@ -164,18 +161,18 @@ textView.setText(tinyDB.getInt("abc",1) + "");
 ```
 
 ## Deleting a key of data
-Easy peasy just call this:
+
 ```
 tinyDB.clearKey(String yourKey);
 ```
 
 ## Deleting all the values
-Just do this
+
 ```
 tinyDB.clearAll();
 ```
 
-## Knwoing when a value was added, deleted, or all values are deleted
+## Knowing when a value was added, deleted, or all values are deleted
 You have listener for data change, removal and etc...
 
 See this:
@@ -213,12 +210,12 @@ public class MainActivity extends AppCompatActivity implements ValueChangeListen
 ## Possible types
 
 You can save these kind of formats to save
-1. Int
+1. Integer
 2. Boolean
 3. String
 4. Float
 5. List
-6. And is none of them is what you want, just call `put` and save whatever you want and `get` to get a custom value.
+6. Use `put` and `get` to get a custom value for other types of formats.
 
 ## Thanks to
 [Paper](https://github.com/pilgr/Paper)
