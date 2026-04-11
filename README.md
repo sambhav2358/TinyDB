@@ -9,7 +9,7 @@ A simple and easy to use database library to save user data. It is very lighweig
   <img src="https://img.shields.io/github/commits-since/sambhav2358/TinyDB/1.92"/>
   <img alt="GitHub issues" src="https://img.shields.io/github/issues/sambhav2358/TinyDB?color=blue">
   <a href="https://github.com/sambhav2358/TinyDB/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/sambhav2358/TinyDB?label=Forks"></a>
-  ![Views](https://img.shields.io/badge/dynamic/json?color=success&label=views&query=%24.value&url=https%3A%2F%2Fhits.seeyoufarm.com%2Fapi%2Fcount%2Fincr%2Fbadge.svg%3Furl%3Dhttps%253A%252F%252Fgithub.com%252Fsambhav2358%252FTinyDB%26count_bg%3D%252379C83D%26title_bg%3D%2523555555%26icon%3D%26icon_color%3D%2523E7E7E7%26title%3Dviews%26edge_flat%3Dfalse)
+  ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.countapi.xyz%2Fhit%2Fsambhav2358-tinydb%2Fvisits&query=%24.value)
   <a href="https://github.com/sambhav2358/TinyDB/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/sambhav2358/TinyDB?label=Stars"></a>
   <img src="https://img.shields.io/badge/State-working-blue"/>
   <img src="https://img.shields.io/badge/Code%20quality-A-blue"/>
