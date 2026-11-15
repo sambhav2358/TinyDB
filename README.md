@@ -15,7 +15,7 @@ TinyDB is a lightweight, high-performance database library for Android designed 
 
 ### Key Features
 * **Ultra-Lightweight:** Minimal impact on APK size (~5KB–8KB).
-* **High Compatibility:** Supports API level 19+ (covering 99.7%+ of Android devices).
+* **High Compatibility:** Supports API level 19+ (covering every Android device).
 * **Observer Pattern:** Built-in `ValueChangeListener` to react to data modifications.
 * **Multi-Instance Support:** Maintain separate database files for different data scopes.
 * **Fast Integration:** Boilerplate-free implementation.
